@@ -12,7 +12,8 @@ var alias = {
   'react-dom': '@hot-loader/react-dom',
   '@utils': path.resolve(__dirname, 'src/utils'),
   '@popup': path.resolve(__dirname, 'src/pages/Popup'),
-  '@option': path.resolve(__dirname, 'src/pages/Options'),
+  '@options': path.resolve(__dirname, 'src/pages/Options'),
+  '@components': path.resolve(__dirname, 'src/components'),
 };
 
 // load the secrets

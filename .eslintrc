@@ -2,5 +2,13 @@
   "extends": "react-app",
   "globals": {
     "chrome": "readonly"
+  },
+  "settings": {
+    "alias": [
+      ["@utils", "./src/utils"],
+      ["@popup", "./src/pages/Popup"],
+      ["@options", "./src/pages/Options"],
+      ["@components", "./src/components"]
+    ]
   }
 }
