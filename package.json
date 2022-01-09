@@ -1,11 +1,11 @@
 {
-  "name": "chrome-extension-boilerplate-react",
+  "name": "chrome-extension-sas-better",
   "version": "4.2.0",
   "description": "A chrome extension boilerplate built with React 17, Webpack 5, and Webpack Dev Server 4",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lxieyang/chrome-extension-boilerplate-react.git"
+    "url": "https://github.com/dathacky/chrome-extension-sas-better.git"
   },
   "scripts": {
     "build": "node utils/build.js",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@hot-loader/react-dom": "^17.0.1",
+    "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.0"
