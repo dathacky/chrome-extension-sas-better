@@ -14,6 +14,7 @@ var alias = {
   '@popup': path.resolve(__dirname, 'src/pages/Popup'),
   '@options': path.resolve(__dirname, 'src/pages/Options'),
   '@components': path.resolve(__dirname, 'src/components'),
+  '@config': path.resolve(__dirname, 'src/config'),
 };
 
 // load the secrets
@@ -41,11 +42,11 @@ var options = {
   entry: {
     options: path.join(__dirname, 'src', 'pages', 'Options', 'index.jsx'),
     popup: path.join(__dirname, 'src', 'pages', 'Popup', 'index.jsx'),
-    background: path.join(__dirname, 'src', 'pages', 'Background', 'index.js'),
+    background: path.join(__dirname, 'src', 'background', 'index.js'),
     contentScript: path.join(__dirname, 'src', 'pages', 'Content', 'index.js'),
   },
   chromeExtensionBoilerplate: {
-    notHotReload: ['contentScript', 'devtools'],
+    notHotReload: ['contentScript'],
   },
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -172,6 +173,9 @@ var options = {
       filename: 'popup.html',
       chunks: ['popup'],
       cache: false,
+    }),
+    new webpack.ProvidePlugin({
+      _get: ['lodash', 'get'],
     }),
   ],
   infrastructureLogging: {

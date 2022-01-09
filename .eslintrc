@@ -1,14 +1,16 @@
 {
   "extends": "react-app",
   "globals": {
-    "chrome": "readonly"
+    "chrome": "readonly",
+    "_get": true
   },
   "settings": {
     "alias": [
       ["@utils", "./src/utils"],
       ["@popup", "./src/pages/Popup"],
       ["@options", "./src/pages/Options"],
-      ["@components", "./src/components"]
+      ["@components", "./src/components"],
+      ["@config", "./src/config"]
     ]
   }
 }
