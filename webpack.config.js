@@ -10,6 +10,9 @@ const ASSET_PATH = process.env.ASSET_PATH || '/';
 
 var alias = {
   'react-dom': '@hot-loader/react-dom',
+  '@utils': path.resolve(__dirname, 'src/utils'),
+  '@popup': path.resolve(__dirname, 'src/pages/Popup'),
+  '@option': path.resolve(__dirname, 'src/pages/Options'),
 };
 
 // load the secrets
